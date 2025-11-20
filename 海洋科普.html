@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{margin: 0;padding: 0;}
+			#background img{width: 100%;height: 100%;position: fixed;left: 0;top: 0;z-index: -1;}
+			body{width: 1640px;height: 1000px;margin: auto;cursor: url("./img/鼠标.png"), auto;}
+			header{height: 60px;}
+			#box{width: 1170px;margin: auto;}
+			header div img{position:relative;animation:myfirst 4s infinite;width: 50px;float: left;}
+			@keyframes myfirst{0%{rotate: 0deg;}25%{rotate:25deg;}75%{rotate: -25deg;}100%{rotate: 0deg;}}
+			header ul{float: right;margin-top: 20px;}
+			header li{list-style: none;float: left;padding-left: 10px;border-right: white 1px solid;width: 70px;}
+			header li:last-child{border: none;}
+			header li a{color: white;display: block;text-decoration: none;}
+			header li a:hover{text-decoration: none;color: darkgray}
+			nav{height: 60px;background-color: lightcyan;}
+			nav ul{width: 800px;margin: auto;}
+			nav li{list-style: none;float: left;width: 200px;text-align: center;line-height: 60px;}
+			nav li a{text-decoration: none;display: block;font-size: 20px;}
+			nav li a:hover{background-color: darkturquoise;color: white;text-decoration: none;}
+			#haiyang{background-color: darkturquoise;color: white;}
+			aside{float: left;color: white;margin-left: 200px;margin-top: 70px;}
+			aside li{list-style: none;}
+			aside h2{margin-bottom: 20px;color: white;}
+			aside ul{border: 2px solid white;width: 100px;}
+			aside li{list-style: none;font-size: 20px;margin-bottom: 20px;text-align: center;}
+			aside li a{text-decoration: none;color: white;}
+			aside li a:hover{color: grey;}
+			article h1{color: white;margin-left: 400px;margin-top: 70px;}
+			#line{border-bottom: 2px solid white;padding-bottom: 8px; width: 50%;margin-left: 400px;}
+			article video{width: 300px;height: 300px;margin-top: 20px;margin-left: 95px;}
+			article div{width: 400px; color: white;font-size: 20px;margin-top: -270px;margin-left: 750px;}
+			article p{text-indent: 2em;}
+			#modal{width:760px;text-align: left;margin: 0 auto;margin-top: 50px;}
+			#modal li{margin-top: 10px;}
+			#modal li a{color: white;text-decoration: none;}
+			#modal li:first-child{list-style-image: url(./img/水母logo.png);}
+			#modal li:nth-child(2){list-style-image: url(./img/鲸鱼logo.png);}
+			#modal li:nth-child(3){list-style-image: url(./img/章鱼logo.png);}
+			#modal li:nth-child(4){list-style-image: url(./img/珊瑚logo.png);}
+			#modal li:nth-child(5){list-style-image: url(./img/企鹅logo.png);}
+			#picture{clear: both;margin: auto;float: right;margin-top: -700px;margin-right: 50px;}
+			#picture img{width: 300px;height: 200px;}
+			#picture1{border: 2px solid white;margin-bottom: 20px;transition: all 2s;}
+			#picture1:hover{transform: scale(1.2);}
+			#picture2{border: 2px solid white;margin-bottom: 20px;transition: all 2s;}
+			#picture2:hover{transform: scale(1.2);}
+			#picture3{border: 2px solid white;transition: all 2s;}
+			#picture3:hover{transform: scale(1.2);}
+			footer{ background-color:#f6f6f6;padding-top: 25px;position: absolute;top: 1000px;width: 1640px;}
+			.footnav{margin: 0 auto;width: 600px;height: 60px;}
+			.footnav li a{text-decoration: none;color: #595959;}
+			.footnav li{float: left;width: 109px;list-style: none;text-align: center;border-right: #595959 1px solid;}
+			.footnav li:last-child{border: none;}
+			.copyright{text-align: center;padding-bottom: 30px;color: #595959;}
+		</style>
+	</head>
+	<body>
+		<div id="background">
+			<img src="./img/海洋.png">
+		</div>
+		<header>
+			<div id="box">
+				<div>
+					<a href="./封面.html"><img src="./img/logo.png"></a>
+				</div>
+				<ul>
+					<li><a href="">登录</a></li>
+					<li><a href="" onclick="shoucang()">收藏本站</a></li>
+				</ul>
+			</div>
+		</header>
+		<nav>	
+			<ul>
+				<li id="shouye"><a href="./index.html">首页</a></li>
+				<li id="us"><a href="./关于我们.html">关于我们</a></li>
+				<li id="haiyang"><a href="">海洋科普</a></li>
+				<li id="goupiao"><a href="./购票入口.html">购票入口</a></li>
+			</ul>
+		</nav>
+		<aside>
+			<h2>科普天地</h2>
+			<ul>
+				<li><a href="">认识海洋</a></li>
+				<li><a href="">科普浏览</a></li>
+				<li><a href="">环保活动</a></li>
+				<li><a href="">志愿者招募</a></li>
+			</ul>
+		</aside>
+		<article>
+			<h1>认识海洋</h1>
+			<p id="line"></p>
+			<video autoplay loop muted>
+				<source src="./video/海豚.mp4">
+			</video>
+			<div>
+				<p>一望无际的蓝色,夹着各种鱼类。地球表面被各大陆地分割为彼此相通的广大水域称为海洋，地球其总面积约为3.6亿平方公里，约占地球表面积的71%，海洋中含有十三亿五千多万立方千米的水，约占地球上总水量的97%，而可用于人类饮用只占2%。</p>
+				<p>地球五个主要的大洋为太平洋、大西洋和印度洋、北冰洋、南冰洋，大部分以陆地和海底地形线为界。目前为止，人类已探索的海底只有5%，还有95%的海底未知的。</p>
+			</div>
+		</article>
+		<div id="modal">
+			<ul>
+				<li id="shuimu"><a href="">海洋里最毒的生物是箱型水母，美丽的外观看上去人畜无害，但它的毒素却能在几分钟之内致人于死地，而且一只箱水母身上的素毒足以毒死60位成年人</a></li>
+				<li id="jingyu"><a href="">蓝鲸是地球上已知的体积最大的动物，长可达33米，重达181吨，并且世界各大洋都能发现它的足迹。而它目前被列为“濒危”动物。</a></li>
+				<li id="zhangyu"><a href="">章鱼非常聪明的一种动物。他们不仅拥有惊人的记忆力和判断力，更可以迅速地模拟身边的环境，改变自己的颜色</a></li>
+				<li id="shanhu"><a href="">别看珊瑚长得像树林，硬的像石头，外貌千姿百态，可它却是真真正正的动物，和另一海洋生物水母是同门兄弟。它是地球上最古老的海洋生物之一，存在历史近五亿年。珊瑚生活在热带和亚热带海域，由珊瑚虫聚集而成，单个珊瑚虫身长几毫米，长有不少触手以进行光合作用和捕食细小浮游生物为生。</a></li>
+				<li id="qie"><a href="">企鹅是鸟类中比较特殊的一个类群,它们在演化过程中丧失了飞行能力,翅膀演变成了鳍状,脚的位置也与众不同,使得身体呈直立姿势,所以跟人一样“直立行走”。为了适应在水下游泳,企鹅的羽毛也变得非常短,这样可以减少阻力。</a></li>
+			</ul>
+		</div>
+		<div id="picture">
+			<p id="picture1"><img src="./img/企鹅.png"></p>
+			<p id="picture2"><img src="./img/海马.png"></p>
+			<p id="picture3"><img src="./img/小丑鱼.png"></p>
+		</div>
+		<footer>
+			<div class="footnav">
+				<ul>
+					<li><a href="./首页.html">首页</a></li>
+					<li><a href="#">公司简介</a></li>
+					<li><a href="#">水族馆中心</a></li>
+					<li><a href="#">会员注册</a></li>
+					<li><a href="#">联系我们</a></li>
+				</ul>
+			</div>
+			<div class="copyright">
+				Copyright © 2022 xx.com, all rights reserved.
+			</div>
+		</footer>
+		<script>
+			function shoucang(){
+				alert('收藏成功');
+			}
+		</script>
+	</body>
+</html>

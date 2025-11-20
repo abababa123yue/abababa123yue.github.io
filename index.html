@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+			<meta http-equiv="x-ua-compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<style>
+			*{margin: 0;padding: 0;}
+			#background img{width: 100%;height: 100%;position: fixed;left: 0;top: 0;z-index: -1;}
+			body{width: 1640px;height: 1000px;margin: auto;cursor: url("./img/鼠标.png"), auto;}
+			header{height: 60px;}
+			#box{width: 1170px;margin: auto;}
+			header div img{position:relative;animation:myfirst 4s infinite;width: 50px;float: left;}
+			@keyframes myfirst{0%{rotate: 0deg;}25%{rotate:25deg;}75%{rotate: -25deg;}100%{rotate: 0deg;}}
+			header ul{float: right;margin-top: 20px;}
+			header li{list-style: none;float: left;padding-left: 10px;border-right: white 1px solid;width: 70px;}
+			header li:last-child{border: none;}
+			header li a{color: white;display: block;text-decoration: none;}
+			header li a:hover{text-decoration: none;color: darkgray}
+			nav{height: 60px;background-color: lightcyan;}
+			nav ul{width: 800px;margin: auto;}
+			nav li{list-style: none;float: left;width: 200px;text-align: center;line-height: 60px;}
+			nav li a{text-decoration: none;display: block;font-size: 20px;}
+			nav li a:hover{background-color: darkturquoise;color: white;text-decoration: none;}
+			#shouye{background-color: darkturquoise;color: white;}
+			#slidershow{background: rgba(255,255,255,0.4);}	
+			aside{color: white;float: left;}
+			aside h3{margin-left: 330px;margin-top: 0px;}
+			aside ul{margin-left: 250px;width: 250px;}
+			aside ul li{margin-top: 20px;font-size: 16px;}			
+			.modal1{margin: 0 auto;color: white;width: 400px;}
+			.modal1 h3{text-align: center;}		
+			.text1{margin-top: 20px;}
+			.text2{margin-top: 20px;}
+			.modal1 img{width: 150px;height: 100px;float: left;}
+			.modal1 img{border: 1px white solid;margin-right: 10px;}
+			article{clear: both; color: white;margin: 0 auto;width: 400px;float: right;margin-top: -287px;margin-right:100px;}
+			article h3{text-align: center;}
+			article ul{font-size: 16px;}
+			article li{margin-top: 0px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;margin-top: 20px;}
+			article li a{ color: white;}
+			article li a:hover{text-decoration: none;color: darkgray;}
+			footer{ background-color:#f6f6f6;padding-top: 25px;position: absolute;top: 950px;width: 1640px;}
+			.footnav{margin: 0 auto;width: 600px;height: 60px;}
+			.footnav li a{text-decoration: none;color: #595959;}
+			.footnav li{float: left;width: 109px;list-style: none;text-align: center;border-right: #595959 1px solid;}
+			.footnav li:last-child{border: none;}
+			.copyright{text-align: center;padding-bottom: 30px;color: #595959;}
+		</style>
+	</head>
+	<body>
+		<div id="background">
+			<img src="./img/海洋.png">
+		</div>
+		<header>
+			<div id="box">
+				<div>
+					<a href="./封面.html"><img src="./img/logo.png"></a>
+				</div>
+				<ul>
+					<li><a href="">登录</a></li>
+					<li><a href="" onclick="shoucang()">收藏本站</a></li>
+				</ul>
+			</div>
+		</header>
+		<nav>	
+			<ul>
+				<li id="shouye"><a href="">首页</a></li>
+				<li id="us"><a href="./关于我们.html">关于我们</a></li>
+				<li id="haiyang"><a href="./海洋科普.html">海洋科普</a></li>
+				<li id="goupiao"><a href="./购票入口.html">购票入口</a></li>
+			</ul>
+		</nav>
+		
+		
+		<div id="slidershow" class="carousel slide" data-ride="carousel" data-interval="2000">
+			<!-- 设置图片轮播计数器 -->
+			<ol class="carousel-indicators">
+				<li class="active" data-target="#slidershow" data-slide-to="0"></li>
+				<li data-target="#slidershow" data-slide-to="1"></li>
+				<li data-target="#slidershow" data-slide-to="2"></li>
+			</ol>
+			<!-- 设置轮播图片 -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="./img/轮播图1.png" style=" height:500px;margin:0 auto;width: 1000px;">
+					<div class="carousel-caption">
+					</div>
+				</div>
+				<div class="item">
+					<img src="./img/轮播图2.png" style="height:500px;margin:0 auto;width: 1000px;">
+					<div class="carousel-caption">
+					</div>
+				</div>
+				<div class="item">
+					<img src="./img/轮播图3.png" style=" height:500px;margin:0 auto;width: 1000px;">
+					<div class="carousel-caption">
+					</div>
+				</div>
+			</div>
+			<!-- 设置轮播图片控制器 -->
+			<a class="left carousel-control" href="#slidershow" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#slidershow" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
+		<script src="./lib/jquery/jquery-1.11.0.min.js"></script>
+		<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+		<div id="all">
+			<aside>
+				<h3>营业时间</h3>
+				<ul>
+					<li>日常营业时间08:00-18:00,售票及入馆17：30结束</li>
+					<li>七八月暑假，十一黄金周以及春节营业时间调整为9:00-21:00,售票及入馆20：30结束</li>
+					<li>特殊活动日常营业时间请留意官网和现场公告</li>
+				</ul>
+			</aside>
+		
+			<div class="modal1">
+				<h3>本月明星</h3>
+				<div class="text1">
+					<div><img src="./img/海豚.png"></div>
+					<div class="haitun">海豚（拉丁学名：Delphinidae）是鲸目海豚科动物的统称。海豚科所有属种皆列入中国《国家重点保护野生动物名录》，其中中华白海豚为国家一级保护动物，其他海豚为国家二级保护动物。</div>
+				</div>
+				<div class="text2">
+					<div><img src="./img/水母.png"></div>
+					<div class="shuimu">水母（拉丁学名：Scyphozoa）,别称海蜇，是刺胞动物门钵水母纲动物，水母其身体主要成分是水，并由内外两胚层所组成，两层间有一个很厚的中胶层，不但透明，而且有漂浮作用。</div>
+				</div>
+			</div>	
+				<article>
+					<h3>科普小天地</h3>
+					<ul>
+						<li id="shuimu"><a href="">海洋里最毒的生物是箱型水母，美丽的外观看上去人畜无害，但它的毒素却能在几分钟之内致人于死地，而且一只箱水母身上的素毒足以毒死60位成年人</a></li>
+						<li><a href="">蓝鲸是地球上已知的体积最大的动物，长可达33米，重达181吨，并且世界各大洋都能发现它的足迹。而它目前被列为“濒危”动物。</a></li>
+						<li><a href="">章鱼非常聪明的一种动物。他们不仅拥有惊人的记忆力和判断力，更可以迅速地模拟身边的环境，改变自己的颜色</a></li>
+						<li><a href="">别看珊瑚长得像树林，硬的像石头，外貌千姿百态，可它却是真真正正的动物，和另一海洋生物水母是同门兄弟。它是地球上最古老的海洋生物之一，存在历史近五亿年。珊瑚生活在热带和亚热带海域，由珊瑚虫聚集而成，单个珊瑚虫身长几毫米，长有不少触手以进行光合作用和捕食细小浮游生物为生。</a></li>
+						<li><a href="">企鹅是鸟类中比较特殊的一个类群,它们在演化过程中丧失了飞行能力,翅膀演变成了鳍状,脚的位置也与众不同,使得身体呈直立姿势,所以跟人一样“直立行走”。为了适应在水下游泳,企鹅的羽毛也变得非常短,这样可以减少阻力。</a></li>
+					</ul>
+				</article>
+		</div>
+		
+			<footer>
+				<div class="footnav">
+					<ul>
+						<li><a href="http://127.0.0.1:8848/%E7%BD%91%E7%AB%99/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC.html">首页</a></li>
+						<li><a href="http://127.0.0.1:8848/%E7%BD%91%E7%AB%99/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC.html">公司简介</a></li>
+						<li><a href="#">水族馆中心</a></li>
+						<li><a href="#">会员注册</a></li>
+						<li><a href="#">联系我们</a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					Copyright © 2022 xx.com, all rights reserved.
+				</div>
+			</footer>
+			<script>
+				function shoucang(){
+					alert('收藏成功');
+				}
+			</script>
+	</body>
+</html>

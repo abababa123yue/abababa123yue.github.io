@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{margin: 0;padding: 0;}
+			#background img{width: 100%;height: 100%;position: fixed;left: 0;top: 0;z-index: -1;}
+			body{width: 1640px;height: 1000px;margin: auto;cursor: url("./img/鼠标.png"), auto;}
+			header{height: 60px;}
+			#box{width: 1170px;margin: auto;}
+			header div img{position:relative;animation:myfirst 4s infinite;width: 50px;float: left;}
+			@keyframes myfirst{0%{rotate: 0deg;}25%{rotate:25deg;}75%{rotate: -25deg;}100%{rotate: 0deg;}}
+			header ul{float: right;margin-top: 20px;}
+			header li{list-style: none;float: left;padding-left: 10px;border-right: white 1px solid;width: 70px;}
+			header li:last-child{border: none;}
+			header li a{color: white;display: block;text-decoration: none;}
+			header li a:hover{text-decoration: none;color: darkgray}
+			nav{height: 60px;background-color: lightcyan;}
+			nav ul{width: 800px;margin: auto;}
+			nav li{list-style: none;float: left;width: 200px;text-align: center;line-height: 60px;}
+			nav li a{text-decoration: none;display: block;font-size: 20px;}
+			nav li a:hover{background-color: darkturquoise;color: white;text-decoration: none;}
+			#us{background-color: darkturquoise;color: white;}
+			aside{float: left;color: white;margin-left: 200px;margin-top: 70px;}
+			aside h2{margin-bottom: 20px;}
+			aside ul{border: 2px solid white;}
+			aside li{list-style: none;font-size: 20px;margin-bottom: 20px;text-align: center;}
+			aside li a{text-decoration: none;color: white;}
+			aside li a:hover{color: gray;}
+			article h1{color: white;margin-left: 400px;margin-top: 70px;}
+			#line{border-bottom: 2px solid white;padding-bottom: 8px; width: 50%;margin-left: 400px;}
+			article div{text-indent: 2em;color: white;width: 700px;margin: auto;text-align:left;margin-top: 20px;}
+			article p{margin-top: 10px;}
+			article h2{text-align: center;}
+			#company{clear: both;margin: auto;float: right;margin-top: -622px;margin-right: 50px;}
+			#company img{width: 300px;height: 200px;}
+			#company1{border: 2px solid white;margin-bottom: 20px;transition: all 2s;}
+			#company1:hover{transform: scale(1.2);}
+			#company2{border: 2px solid white;margin-bottom: 20px;transition: all 2s;}
+			#company2:hover{transform: scale(1.2);}
+			#company3{border: 2px solid white;transition: all 2s;}
+			#company3:hover{transform: scale(1.2);}
+			footer{ background-color:#f6f6f6;padding-top: 25px;position: absolute;top: 950px;width: 1640px;}
+			.footnav{margin: 0 auto;width: 600px;height: 60px;}
+			.footnav li a{text-decoration: none;color: #595959;}
+			.footnav li{float: left;width: 109px;list-style: none;text-align: center;border-right: #595959 1px solid;}
+			.footnav li:last-child{border: none;}
+			.copyright{text-align: center;padding-bottom: 30px;color: #595959;}
+		</style>
+	</head>
+	<body>
+		<div id="background">
+			<img src="./img/海洋.png">
+		</div>
+		<header>
+			<div id="box">
+				<div>
+					<a href="./封面.html"><img src="./img/logo.png"></a>
+				</div>
+				<ul>
+					<li><a href="">登录</a></li>
+					<li><a href="" onclick="shoucang()">收藏本站</a></li>
+				</ul>
+			</div>
+		</header>
+		<nav>	
+			<ul>
+				<li id="shouye"><a href="./index.html">首页</a></li>
+				<li id="us"><a href="">关于我们</a></li>
+				<li id="haiyang"><a href="./海洋科普.html">海洋科普</a></li>
+				<li id="goupiao"><a href="./购票入口.html">购票入口</a></li>
+			</ul>
+		</nav>
+
+			<aside>
+				<h2>企业信息</h2>
+				<ul>
+					<li><a href="">关于我们</a></li>
+					<li><a href="">发展历程</a></li>
+					<li><a href="">人才招聘</a></li>
+				</ul>
+			</aside>
+		
+			<article>
+				<h1>关于我们</h1>
+				<p id="line"></p>
+				<div>
+					<h2>认识常信海洋水族馆</h2>
+						<p>常信海洋水族馆位于繁华的常州浦东陆家嘴金融区，紧邻东方明珠塔。是常州颇具吸引力、以展示水世界生物、生态为主题的旅游景点。也是很具特色的人造海水水族馆之一。</p>
+						<p>常信海洋水族馆的股东包括新加坡星雅集团和中国保利集团，投资总额5500万美元。2002年2月常州海洋水族馆对公众开放， 现每年接待来自世界各地的游客超过200万人次，被授予国家及常州“科普教育基地”称号。2003年，上海海洋水族馆击败国际上其它对手，为中国第一次夺得2008年“第七屇国际水族馆大会”主办权。</p>
+						<p>常信海洋水族馆拥有独特的外观，主辅楼两幢建筑呈大小金字塔型。建筑面积20500平方米，其中，展示区12，000平方米，特色礼品店500平方米，另设有可容纳300人的水族餐厅。</p>
+						<p>常信海洋水族馆拥有独特的外观，主辅楼两幢建筑呈大小金字塔型，建筑面积20500平方米。常州海洋水族馆是目前世界上唯一一个设有中国展区，并对长江流域水生物、生态进行主题展示的水族馆。从“长江”出发，经过亚马逊丛林，来到南美洲区“电鳗”池畔，与澳洲“锯鳐、射水鱼”隔水相望，在缤纷的东南亚区流连，与南极洲的企鹅一起领略寒冬，尽情欣赏镇馆之宝---草海龙的风姿，惊叹“水母”的曼妙身影，穿越呈现包括惊险的“鲨鱼海湾”在内4种不同海洋风情、长155米、也是目前世界上最长的海底隧道……在新奇独特、风光各异、美轮美奂、自然欢快的海底世界，在450多种，超过15000条鱼儿的簇拥下，引领每一位游客穿越五大洲四大洋，经历一次终生难忘的“海洋之旅”</p>
+						<p>常信海洋水族馆的开发及经营，是为了引导公众从观赏水生物到关爱水生物，从了解水生物的生存困境到关注我们人类的生存环境，保护我们共同的家园。为此，常州海洋水族馆专门创建了“My Green ，我的绿色” 专属绿色品牌，并且将“绿色“的理念充分体现在水族馆内展开的各项活动中，生物展示、市场活动、科普课程以及公益和关爱活动。在上海海洋水族馆“我的绿色”的影响下，越来越多热爱海洋、热爱绿色的朋友加入了海洋馆“海洋之友”的行列，他们已成为传播海洋知识、环境保护的使者，在增强上海市、陆家嘴金融区的软实力的同时更是在关爱海洋、关爱水生生物方面发挥着积极的作用。</p>
+				</div>
+			</article>
+				<div id="company">
+					<p id="company1"><img src="./img/公司1.png"></p>
+					<p id="company2"><img src="./img/公司2.png"></p>
+					<p id="company3"><img src="./img/公司3.png"></p>
+				</div>
+		
+		<footer>
+			<div class="footnav">
+				<ul>
+					<li><a href="./首页.html">首页</a></li>
+					<li><a href="#">公司简介</a></li>
+					<li><a href="#">水族馆中心</a></li>
+					<li><a href="#">会员注册</a></li>
+					<li><a href="#">联系我们</a></li>
+				</ul>
+			</div>
+			<div class="copyright">
+				Copyright © 2022 xx.com, all rights reserved.
+			</div>
+		</footer>
+		<script>
+			function shoucang(){
+				alert('收藏成功');
+			}
+		</script>
+	</body>
+</html>
